@@ -1,8 +1,8 @@
-## Helpful commands
+# Helpful commands
 
-### Kubernetes
+## Kubernetes
 
-#### Pods
+### Pods
 
 ```bash
 kubectl get pods --field-selector=status.phase=Running --sort-by=.metadata.creationTimestamp # display running pods sorted by creation
