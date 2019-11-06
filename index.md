@@ -17,3 +17,11 @@ kubectl logs -f my-pod # tail logs
 ```bash
 docker exec -ti {container} /bin/bash
 ```
+
+## Hive
+
+### Connect with Beeline
+
+```bash
+beeline -u jdbc:hive2://localhost:10000/default -n {user}
+```
