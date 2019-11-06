@@ -9,3 +9,11 @@ kubectl get pods --field-selector=status.phase=Running --sort-by=.metadata.creat
 kubectl logs my-pod # display logs
 kubectl logs -f my-pod # tail logs
 ```
+
+## Docker
+
+### Connect to running container
+
+```bash
+docker exec -ti {container} /bin/bash
+```
