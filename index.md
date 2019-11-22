@@ -34,3 +34,12 @@ beeline -u jdbc:hive2://localhost:10000/default -n {user}
 gg # go to beginning of files
 dG # delete al lines after cursor
 ```
+
+## MongoDB
+
+### Command examples
+
+```
+db.getCollectionNames()
+db.{collection}.findOne()
+```
