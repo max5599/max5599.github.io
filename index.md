@@ -13,6 +13,8 @@ kubectl logs my-pod
 kubectl logs -f my-pod
 # delete pods
 kubectl delete pods my-pod
+# Attach to pod
+kubectl exec -it my-pod -- /bin/bash
 ```
 
 ## Docker
