@@ -7,6 +7,8 @@
 ```bash
 # display running pods sorted by creation, phase can be Running|Failed|Pending|Unknown|Succeeded
 kubectl get pods --field-selector=status.phase=Running --sort-by=.metadata.creationTimestamp
+# filter pods by label
+kubectl get pods -l app=my_app,version=1.0
 # display logs
 kubectl logs my-pod
 # tail logs
