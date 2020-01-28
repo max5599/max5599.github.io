@@ -65,3 +65,18 @@ bin/kafka-topics.sh --zookeeper localhost:2181 --list
 # get the latest offset of a topic
 bin/kafka-run-class.sh kafka.tools.GetOffsetShell --broker-list {brokers} --topic {topic} --time -1
 ```
+
+## Bash
+
+### Test
+```bash
+# Test syntax
+if [ cond ]
+then
+  echo "true"
+else
+  echo "false"
+fi
+# Test if variable empty
+[ -z "$VAR" ] && echo "It's empty"
+```
