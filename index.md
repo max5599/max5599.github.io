@@ -35,6 +35,14 @@ docker exec -ti {container} /bin/bash
 beeline -u jdbc:hive2://localhost:10000/default -n {user}
 ```
 
+## HDFS
+
+# Copy to remote
+```bash
+# To S3
+hadoop distcp -Dfs.s3a.access.key="..." -Dfs.s3a.secret.key="..." /hdfs-folder/ s3a://s3-folder/
+```
+
 ## Linux
 
 ### Vi
