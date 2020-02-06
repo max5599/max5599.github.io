@@ -80,3 +80,11 @@ fi
 # Test if variable empty
 [ -z "$VAR" ] && echo "It's empty"
 ```
+
+## Unix
+
+### SSH
+```bash
+# Redirect local port 3308 to port 3306 of target.com using jump server jum.com
+ssh -L 3308:target.com:3306 jump.com
+```
