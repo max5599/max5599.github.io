@@ -96,3 +96,15 @@ fi
 # Redirect local port 3308 to port 3306 of target.com using jump server jum.com
 ssh -L 3308:target.com:3306 jump.com
 ```
+
+## Scala
+
+### Regex
+```scala
+// Matching on regex
+val Pattern = "([a-z])_test".r
+"my_test" match {
+   case Pattern(c) => // => "my"
+   case _ => 
+}
+```
