@@ -43,17 +43,6 @@ beeline -u jdbc:hive2://localhost:10000/default -n {user}
 hadoop distcp -Dfs.s3a.access.key="..." -Dfs.s3a.secret.key="..." /hdfs-folder/ s3a://s3-folder/
 ```
 
-## Linux
-
-### Vi
-
-```
-# go to beginning of files
-gg
-# delete al lines after cursor
-dG
-```
-
 ## MongoDB
 
 ### Command examples
@@ -95,6 +84,24 @@ fi
 ```bash
 # Redirect local port 3308 to port 3306 of target.com using jump server jum.com
 ssh -L 3308:target.com:3306 jump.com
+```
+
+### vi
+
+```bash
+# go to beginning of files
+gg
+# delete al lines after cursor
+dG
+```
+
+### Check disk space
+```bash
+# List space
+df -h
+# List folders by size
+du -m --max-depth 1 | sort -rn | head -11
+
 ```
 
 ## Scala
