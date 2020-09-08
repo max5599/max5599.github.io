@@ -100,8 +100,7 @@ dG
 # List space
 df -h
 # List folders by size
-du -m --max-depth 1 | sort -rn | head -11
-
+du -sch .[!.]* * |sort -h
 ```
 
 ## Scala
